@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Clubhouse — Serenity Residences | Amarah</title>
+<meta name="description" content="A private members clubhouse reserved exclusively for Serenity Residences owners and their guests. Wellness facilities, squash courts, concierge dining, and curated communal spaces." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/images/logo/mark.png">
+<link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="square" d="M4 12h15M13 6l6 6-6 6"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="nav is-scrolled" id="nav">
+  <div class="container">
+    <a href="index.html" class="nav__brand" aria-label="Amarah — Home">
+      <span class="nav__logo nav__logo--light">
+        <img class="nav__logo-mark" src="assets/images/logo/mark_white.png" alt="" aria-hidden="true">
+        <img class="nav__logo-wordmark" src="assets/images/logo/wordmark_white.png" alt="Amarah">
+      </span>
+      <span class="nav__logo nav__logo--dark">
+        <img class="nav__logo-mark" src="assets/images/logo/mark.png" alt="" aria-hidden="true">
+        <img class="nav__logo-wordmark" src="assets/images/logo/wordmark.png" alt="Amarah">
+      </span>
+    </a>
+    <nav class="nav__links" aria-label="Primary navigation">
+      <a href="about.html">About</a>
+      <a href="projects/">Projects</a>
+      <a href="clubhouse.html" aria-current="page">Clubhouse</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn--ghost nav__cta">
+      <span>Register Interest</span>
+      <svg><use href="#i-arrow"/></svg>
+    </a>
+    <button class="nav__burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__mobile" aria-hidden="true">
+      <a href="about.html">About</a>
+      <a href="projects/">Projects</a>
+      <a href="clubhouse.html">Clubhouse</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="leadership.html">Leadership</a>
+      <a href="contact.html">Register Interest</a>
+    </div>
+  </div>
+</header>
+
+<!-- Clubhouse Hero -->
+<section class="clubhouse-hero">
+  <div class="clubhouse-hero__media">
+    <img src="assets/clubhouse/without-changing-anything-else-replace-the-spelli.png"
+         alt="The Amarah Clubhouse — reception lobby, Serenity Residences" />
+  </div>
+  <div class="clubhouse-hero__scrim"></div>
+  <div class="container clubhouse-hero__inner">
+    <span class="clubhouse-hero__eyebrow">Serenity Residences</span>
+    <h1 class="clubhouse-hero__title">The<br/>Clubhouse.</h1>
+    <p class="clubhouse-hero__sub">
+      A private members venue reserved exclusively for owners and their guests.
+      Not a hotel amenity. Not shared with the public. Yours alone.
+    </p>
+    <a href="contact.html" class="btn btn--primary" style="margin-top:2.5rem;display:inline-flex;">
+      <span>Request Access</span>
+      <svg><use href="#i-arrow"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- Intro -->
+<section style="background:var(--amr-chalk-dust);padding:100px 0;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,100px);align-items:start;">
+      <div>
+        <span class="section-label">01 — About</span>
+        <h2 style="font-family:var(--font-display);font-size:clamp(2.2rem,4vw,4rem);font-weight:300;font-feature-settings:'ss01';color:var(--amr-burnt-bark);line-height:1.05;margin-top:1.4rem;">
+          A standard we<br/>set for ourselves.
+        </h2>
+      </div>
+      <div>
+        <p style="font-family:var(--font-sans);font-size:var(--fs-17);font-weight:var(--fw-light);color:var(--color-ink);line-height:1.75;margin-top:1.4rem;">
+          The Serenity Clubhouse was designed alongside the residences — not as an amenity checklist,
+          but as a natural extension of how we believe life at this address should feel.
+        </p>
+        <p style="font-family:var(--font-sans);font-size:var(--fs-17);font-weight:var(--fw-light);color:var(--color-ink-mute);line-height:1.75;margin-top:1.2rem;">
+          Its marble corridors, glazed atrium, and resident reception are staffed every hour.
+          Every facility is reserved for owners and their invited guests.
+          Nothing here has a queue. Nothing here is shared with strangers.
+        </p>
+        <p style="font-family:var(--font-sans);font-size:var(--fs-17);font-weight:var(--fw-light);color:var(--color-ink-mute);line-height:1.75;margin-top:1.2rem;">
+          This is quiet luxury made functional — a space where the standard of care
+          you experience in your home continues the moment you step outside your door.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Full-bleed Lobby Image -->
+<div style="width:100%;height:clamp(360px,55vh,640px);overflow:hidden;">
+  <img src="assets/clubhouse/interior-ai-result%20%2823%29.jpg"
+       alt="The Amarah Clubhouse — grand atrium with chandelier" loading="lazy"
+       style="width:100%;height:100%;object-fit:cover;object-position:center 40%;" />
+</div>
+
+<!-- Facilities -->
+<section style="background:var(--amr-midnight-tide);padding:100px 0;">
+  <div class="container">
+    <span class="section-label" style="color:var(--amr-ivory-husk);opacity:1;">02 — Facilities</span>
+    <h2 style="font-family:var(--font-display);font-size:clamp(2.2rem,4vw,4rem);font-weight:300;font-feature-settings:'ss01';color:var(--amr-chalk-dust);line-height:1.05;margin-top:1.4rem;margin-bottom:4rem;">
+      What awaits<br/>inside.
+    </h2>
+    <div class="clubhouse-facilities-grid">
+
+      <div class="clubhouse-facility">
+        <div class="clubhouse-facility__img">
+          <img src="assets/clubhouse/interior-ai-result%20%2829%29.jpg"
+               alt="Residents' lobby and concierge desk" loading="lazy" />
+        </div>
+        <div class="clubhouse-facility__body">
+          <h3>Concierge &amp; Reception</h3>
+          <p>A staffed residents' lobby — your first impression every time you arrive home.
+             24-hour concierge, parcel handling, visitor registration, and valet service.</p>
+        </div>
+      </div>
+
+      <div class="clubhouse-facility">
+        <div class="clubhouse-facility__img">
+          <img src="assets/clubhouse/interior-ai-result%20%2815%29.jpg"
+               alt="Marble corridor — arrival sequence" loading="lazy" />
+        </div>
+        <div class="clubhouse-facility__body">
+          <h3>Private Arrival Sequence</h3>
+          <p>The move from car to residence is considered. Marble corridors, private elevator
+             lobbies, and a passage that acknowledges your arrival as the moment it is.</p>
+        </div>
+      </div>
+
+      <div class="clubhouse-facility">
+        <div class="clubhouse-facility__img">
+          <img src="assets/clubhouse/interior-ai-result%20%281%29.jpg"
+               alt="Professional squash courts" loading="lazy" />
+        </div>
+        <div class="clubhouse-facility__body">
+          <h3>Squash Courts</h3>
+          <p>Full-specification squash courts with professional court surfaces,
+             spectator seating, and equipment lockers. Bookable exclusively by residents.</p>
+        </div>
+      </div>
+
+      <div class="clubhouse-facility">
+        <div class="clubhouse-facility__img">
+          <img src="assets/clubhouse/interior-ai-result%20%2823%29.jpg"
+               alt="Grand atrium — events and gathering space" loading="lazy" />
+        </div>
+        <div class="clubhouse-facility__body">
+          <h3>Grand Atrium</h3>
+          <p>A glazed, double-height atrium for resident events, private functions,
+             and quiet afternoons alike. The architectural heart of the Clubhouse.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Additional facilities list -->
+    <div style="margin-top:5rem;display:grid;grid-template-columns:1fr 1fr;gap:0;">
+      <div style="border-top:1px solid rgba(235,232,223,.12);padding:28px 0;border-right:1px solid rgba(235,232,223,.08);">
+        <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amr-ivory-husk);margin-bottom:10px;font-weight:var(--fw-medium);">Wellness</div>
+        <div style="font-family:var(--font-display);font-size:var(--fs-17);font-weight:300;color:var(--amr-chalk-dust);font-feature-settings:'ss01'">Spa, Sauna &amp; Treatment Rooms</div>
+      </div>
+      <div style="border-top:1px solid rgba(235,232,223,.12);padding:28px 0 28px 48px;">
+        <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amr-ivory-husk);margin-bottom:10px;font-weight:var(--fw-medium);">Fitness</div>
+        <div style="font-family:var(--font-display);font-size:var(--fs-17);font-weight:300;color:var(--amr-chalk-dust);font-feature-settings:'ss01'">Private Gym — Technogym Equipped</div>
+      </div>
+      <div style="border-top:1px solid rgba(235,232,223,.12);padding:28px 0;border-right:1px solid rgba(235,232,223,.08);">
+        <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amr-ivory-husk);margin-bottom:10px;font-weight:var(--fw-medium);">Aquatic</div>
+        <div style="font-family:var(--font-display);font-size:var(--fs-17);font-weight:300;color:var(--amr-chalk-dust);font-feature-settings:'ss01'">Infinity Pool + Private Cabanas</div>
+      </div>
+      <div style="border-top:1px solid rgba(235,232,223,.12);padding:28px 0 28px 48px;">
+        <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amr-ivory-husk);margin-bottom:10px;font-weight:var(--fw-medium);">Dining</div>
+        <div style="font-family:var(--font-display);font-size:var(--fs-17);font-weight:300;color:var(--amr-chalk-dust);font-feature-settings:'ss01'">Private Dining Room (20 covers)</div>
+      </div>
+      <div style="border-top:1px solid rgba(235,232,223,.12);padding:28px 0;border-right:1px solid rgba(235,232,223,.08);">
+        <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amr-ivory-husk);margin-bottom:10px;font-weight:var(--fw-medium);">Children</div>
+        <div style="font-family:var(--font-display);font-size:var(--fs-17);font-weight:300;color:var(--amr-chalk-dust);font-feature-settings:'ss01'">Supervised Children's Play Studio</div>
+      </div>
+      <div style="border-top:1px solid rgba(235,232,223,.12);padding:28px 0 28px 48px;">
+        <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amr-ivory-husk);margin-bottom:10px;font-weight:var(--fw-medium);">Business</div>
+        <div style="font-family:var(--font-display);font-size:var(--fs-17);font-weight:300;color:var(--amr-chalk-dust);font-feature-settings:'ss01'">Private Meeting Suites (3 rooms)</div>
+      </div>
+      <div style="border-top:1px solid rgba(235,232,223,.12);border-bottom:1px solid rgba(235,232,223,.12);padding:28px 0;border-right:1px solid rgba(235,232,223,.08);">
+        <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amr-ivory-husk);margin-bottom:10px;font-weight:var(--fw-medium);">Mobility</div>
+        <div style="font-family:var(--font-display);font-size:var(--fs-17);font-weight:300;color:var(--amr-chalk-dust);font-feature-settings:'ss01'">Valet Parking + EV Charging</div>
+      </div>
+      <div style="border-top:1px solid rgba(235,232,223,.12);border-bottom:1px solid rgba(235,232,223,.12);padding:28px 0 28px 48px;">
+        <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--amr-ivory-husk);margin-bottom:10px;font-weight:var(--fw-medium);">Outdoor</div>
+        <div style="font-family:var(--font-display);font-size:var(--fs-17);font-weight:300;color:var(--amr-chalk-dust);font-feature-settings:'ss01'">Waterfront Promenade + Lounges</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section style="padding:100px 0;background:var(--amr-chalk-dust);">
+  <div class="container">
+    <span class="section-label">03 — Gallery</span>
+    <h2 style="font-family:var(--font-display);font-size:clamp(2.2rem,4vw,4rem);font-weight:300;font-feature-settings:'ss01';color:var(--amr-burnt-bark);line-height:1.05;margin-top:1.4rem;margin-bottom:3rem;">
+      Inside the<br/>Clubhouse.
+    </h2>
+    <div class="clubhouse-gallery-grid">
+      <div class="clubhouse-gallery-item clubhouse-gallery-item--wide">
+        <img src="assets/clubhouse/without-changing-anything-else-replace-the-spelli.png"
+             alt="Serenity Clubhouse — Amarah branded reception" loading="lazy" />
+      </div>
+      <div class="clubhouse-gallery-item">
+        <img src="assets/clubhouse/interior-ai-result%20%2815%29.jpg"
+             alt="Serenity Clubhouse — marble corridor" loading="lazy" />
+      </div>
+      <div class="clubhouse-gallery-item">
+        <img src="assets/clubhouse/interior-ai-result%20%2829%29.jpg"
+             alt="Serenity Clubhouse — elevator lobby" loading="lazy" />
+      </div>
+      <div class="clubhouse-gallery-item">
+        <img src="assets/clubhouse/interior-ai-result%20%281%29.jpg"
+             alt="Serenity Clubhouse — squash court" loading="lazy" />
+      </div>
+      <div class="clubhouse-gallery-item clubhouse-gallery-item--wide">
+        <img src="assets/clubhouse/interior-ai-result%20%2823%29.jpg"
+             alt="Serenity Clubhouse — grand atrium" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pull Quote -->
+<section style="background:var(--amr-burnt-bark);padding:100px 0;text-align:center;">
+  <div class="container">
+    <div style="max-width:640px;margin:0 auto;">
+      <p style="font-family:var(--font-display);font-size:clamp(1.4rem,3vw,2.6rem);font-weight:300;font-style:italic;color:var(--amr-chalk-dust);line-height:1.35;font-feature-settings:'ss01';">
+        "The measure of a building is not its façade — it is how it makes you feel when you
+        are inside it, surrounded by the people who chose to live there."
+      </p>
+      <p style="font-family:var(--font-sans);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amr-ivory-husk);margin-top:2rem;font-weight:var(--fw-medium);">
+        Amarah Founding Principle
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="project-cta-band">
+  <div class="container">
+    <h2>The Clubhouse is<br/>reserved for owners.</h2>
+    <p>To experience the Clubhouse and tour Serenity Residences, register your interest below. Our team will arrange a private appointment at a time that works for you.</p>
+    <div style="display:flex;gap:1.5rem;flex-wrap:wrap;justify-content:center;margin-top:2.5rem;">
+      <a href="contact.html" class="btn btn--primary">
+        <span>Register Interest</span>
+        <svg><use href="#i-arrow"/></svg>
+      </a>
+      <a href="projects/serenity-residences.html" class="btn btn--ghost" style="color:var(--amr-chalk-dust);border-color:rgba(235,232,223,.25);">
+        <span>View Serenity Residences</span>
+        <svg><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid footer__grid--multi">
+      <div class="footer__brand-col">
+        <div class="footer__brand">
+          <a href="index.html" aria-label="Amarah — Home">
+            <span class="footer__logo-lockup">
+              <img class="footer__logo-mark" src="assets/images/logo/mark_white.png" alt="" aria-hidden="true">
+              <img class="footer__logo-wordmark" src="assets/images/logo/wordmark_white.png" alt="Amarah">
+            </span>
+          </a>
+        </div>
+        <p class="footer__tag">A Serene Lifestyle.</p>
+        <p class="footer__addr">Boulevard Plaza Tower 1<br>Downtown Dubai, UAE</p>
+      </div>
+      <div class="footer__links-col">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="projects/serenity-residences.html">Serenity Residences</a></li>
+          <li><a href="projects/maison-liwa.html">Maison Liwa</a></li>
+          <li><a href="projects/serai-tower.html">Serai Tower</a></li>
+          <li><a href="projects/dar-amarah.html">Dar Amarah</a></li>
+          <li><a href="projects/noor-courtyards.html">Noor Courtyards</a></li>
+          <li><a href="projects/rayan-estates.html">Rayan Estates</a></li>
+        </ul>
+      </div>
+      <div class="footer__links-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="clubhouse.html" aria-current="page">Clubhouse</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__links-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">RERA</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>© <span data-year></span> Amarah Developments LLC. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

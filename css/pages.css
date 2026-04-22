@@ -2300,3 +2300,378 @@ a.contact__meta-value:hover { color: var(--color-accent-dk); }
 @media (max-width: 560px) {
   .footer__grid--multi { grid-template-columns: 1fr; }
 }
+
+/* ================================================================
+   FILTER BAR — REDESIGNED (dark editorial console)
+================================================================ */
+.filter-outer {
+  padding-inline: 0;
+  max-width: 100%;
+}
+.filter-bar {
+  background: rgba(8, 32, 42, 0.97);
+  backdrop-filter: saturate(120%) blur(20px);
+  -webkit-backdrop-filter: saturate(120%) blur(20px);
+  border-top: 2px solid var(--amr-ivory-husk);
+  box-shadow: 0 24px 80px rgba(7,7,7,0.4);
+  border-radius: 0;
+}
+.filter-label {
+  color: var(--amr-ivory-husk);
+  opacity: 0.7;
+}
+.filter-value {
+  color: var(--amr-chalk-dust);
+  font-size: var(--fs-17);
+}
+.filter-btn {
+  height: 88px;
+  color: var(--amr-chalk-dust);
+  padding-inline: clamp(20px, 2.8vw, 40px);
+}
+.filter-btn:hover {
+  background: rgba(208, 183, 149, 0.08);
+}
+.filter-item.is-open .filter-btn {
+  background: rgba(208, 183, 149, 0.12);
+}
+.filter-chevron {
+  color: var(--amr-ivory-husk);
+  opacity: 0.6;
+  width: 11px;
+  height: 11px;
+}
+.filter-sep {
+  background: rgba(235, 232, 223, 0.1);
+  margin-block: 20px;
+}
+.filter-dropdown {
+  background: var(--amr-midnight-tide);
+  border: 1px solid rgba(208, 183, 149, 0.2);
+  box-shadow: 0 16px 48px rgba(7,7,7,0.5);
+}
+.filter-dropdown li {
+  color: var(--amr-chalk-dust);
+  padding: 14px 28px;
+  font-size: var(--fs-15);
+}
+.filter-dropdown li:hover {
+  background: rgba(208, 183, 149, 0.1);
+  color: var(--amr-ivory-husk);
+}
+.filter-dropdown li.is-selected {
+  color: var(--amr-ivory-husk);
+  font-weight: var(--fw-medium);
+}
+.filter-search-btn {
+  height: 88px;
+  background: var(--amr-ivory-husk);
+  color: var(--amr-burnt-bark);
+  font-size: 11px;
+  letter-spacing: var(--ls-widest);
+  padding-inline: clamp(28px, 3.5vw, 52px);
+}
+.filter-search-btn:hover {
+  background: var(--amr-chalk-dust);
+}
+
+/* Filter console label (Find Your Residence) */
+.filter-console-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: clamp(20px, 2.8vw, 40px);
+  flex-shrink: 0;
+  border-right: 1px solid rgba(235, 232, 223, 0.1);
+}
+.filter-console-intro span {
+  font-family: var(--font-sans);
+  font-size: 9px;
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--amr-ivory-husk);
+  opacity: 0.7;
+  white-space: nowrap;
+}
+.filter-console-intro strong {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 1.6vw, 1.4rem);
+  font-weight: 300;
+  color: var(--amr-chalk-dust);
+  font-feature-settings: "ss01";
+  white-space: nowrap;
+  margin-top: 3px;
+}
+
+/* ================================================================
+   CLUBHOUSE PAGE
+================================================================ */
+.clubhouse-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 640px;
+  color: #fff;
+  isolation: isolate;
+}
+.clubhouse-hero__media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+.clubhouse-hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+.clubhouse-hero__scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to right,
+    rgba(8, 32, 42, 0.88) 0%,
+    rgba(8, 32, 42, 0.5) 50%,
+    rgba(8, 32, 42, 0.2) 100%
+  );
+}
+.clubhouse-hero__inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: clamp(60px, 8vh, 120px);
+}
+.clubhouse-hero__eyebrow {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--amr-ivory-husk);
+  margin-bottom: 20px;
+  display: block;
+}
+.clubhouse-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 9vw, 9rem);
+  font-weight: 300;
+  line-height: 0.92;
+  font-feature-settings: "ss01";
+  color: #fff;
+  margin-bottom: 1.8rem;
+  max-width: 8ch;
+}
+.clubhouse-hero__sub {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  font-weight: var(--fw-light);
+  line-height: 1.65;
+  color: rgba(255,255,255,0.75);
+  max-width: 44ch;
+}
+
+/* Facilities grid */
+.clubhouse-facilities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: rgba(235, 232, 223, 0.06);
+}
+.clubhouse-facility {
+  background: var(--amr-midnight-tide);
+  overflow: hidden;
+}
+.clubhouse-facility__img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.clubhouse-facility__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 800ms var(--ease-out-expo);
+}
+.clubhouse-facility:hover .clubhouse-facility__img img {
+  transform: scale(1.04);
+}
+.clubhouse-facility__body {
+  padding: 32px 36px 40px;
+}
+.clubhouse-facility__body h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-weight: 300;
+  color: var(--amr-chalk-dust);
+  font-feature-settings: "ss01";
+  margin-bottom: 1rem;
+}
+.clubhouse-facility__body p {
+  font-family: var(--font-sans);
+  font-size: var(--fs-15);
+  font-weight: var(--fw-light);
+  color: rgba(235,232,223,0.6);
+  line-height: 1.7;
+}
+
+/* Clubhouse gallery grid */
+.clubhouse-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 12px;
+}
+.clubhouse-gallery-item {
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.clubhouse-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 800ms var(--ease-out-expo);
+  display: block;
+}
+.clubhouse-gallery-item:hover img {
+  transform: scale(1.04);
+}
+.clubhouse-gallery-item--wide {
+  grid-column: span 2;
+  aspect-ratio: 16/9;
+}
+
+/* Floor plans grid on project pages */
+.floor-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  background: var(--color-line);
+  margin-top: 3rem;
+}
+.floor-plan-card {
+  background: var(--color-bg);
+  padding: 36px 32px;
+}
+.floor-plan-card__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.floor-plan-card__type {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--color-ink-mute);
+}
+.floor-plan-card__beds {
+  font-family: var(--font-display);
+  font-size: var(--fs-16);
+  font-weight: 300;
+  color: var(--amr-burnt-bark);
+  font-feature-settings: "ss01";
+}
+.floor-plan-card__img {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  color: var(--amr-burnt-bark);
+}
+.floor-plan-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid var(--color-line);
+  padding-top: 1.2rem;
+}
+.floor-plan-card__meta div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.floor-plan-card__meta span {
+  font-family: var(--font-sans);
+  font-size: var(--fs-12);
+  color: var(--color-ink-mute);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-weight: var(--fw-medium);
+}
+.floor-plan-card__meta strong {
+  font-family: var(--font-display);
+  font-size: var(--fs-15);
+  font-weight: 300;
+  color: var(--amr-burnt-bark);
+  font-feature-settings: "ss01";
+}
+
+/* Payment steps */
+.payment-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 3rem;
+  border: 1px solid var(--color-line);
+}
+.payment-step {
+  padding: 40px 36px;
+  border-right: 1px solid var(--color-line);
+  position: relative;
+}
+.payment-step:last-child { border-right: none; }
+.payment-step__pct {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  font-weight: 300;
+  color: var(--amr-ivory-husk);
+  font-feature-settings: "ss01";
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.payment-step__label {
+  font-family: var(--font-sans);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-medium);
+  color: var(--amr-burnt-bark);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.payment-step__note {
+  font-family: var(--font-sans);
+  font-size: var(--fs-13);
+  color: var(--color-ink-mute);
+  line-height: 1.5;
+  font-weight: var(--fw-light);
+}
+
+/* ================================================================
+   RESPONSIVE — CLUBHOUSE + NEW SECTIONS
+================================================================ */
+@media (max-width: 1024px) {
+  .floor-plans-grid { grid-template-columns: repeat(2, 1fr); }
+  .payment-steps { grid-template-columns: repeat(2, 1fr); }
+  .payment-step:nth-child(2) { border-right: none; }
+  .payment-step:nth-child(3) { border-top: 1px solid var(--color-line); border-right: 1px solid var(--color-line); }
+  .payment-step:nth-child(4) { border-top: 1px solid var(--color-line); }
+  .clubhouse-facilities-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+  .floor-plans-grid { grid-template-columns: 1fr; }
+  .payment-steps { grid-template-columns: 1fr; }
+  .payment-step { border-right: none; border-bottom: 1px solid var(--color-line); }
+  .payment-step:last-child { border-bottom: none; }
+  .clubhouse-gallery-grid { grid-template-columns: 1fr 1fr; }
+  .clubhouse-gallery-item--wide { grid-column: span 2; aspect-ratio: 4/3; }
+  .filter-console-intro { display: none; }
+  .filter-btn { height: 72px; }
+  .filter-search-btn { height: 72px; }
+}
+@media (max-width: 560px) {
+  .clubhouse-gallery-grid { grid-template-columns: 1fr; }
+  .clubhouse-gallery-item--wide { grid-column: span 1; aspect-ratio: 4/3; }
+}
