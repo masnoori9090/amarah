@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Projects — Amarah Developments | Dubai, UAE</title>
+<meta name="description" content="Five landmark residential projects across Dubai, Abu Dhabi, and Ras Al Khaimah. Private villas, sky apartments, beachfront estates." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="../assets/images/logo/mark.png">
+<link rel="stylesheet" href="../css/tokens.css" />
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/components.css" />
+<link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="square" d="M4 12h15M13 6l6 6-6 6"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="nav is-scrolled" id="nav">
+  <div class="container">
+    <a href="../index.html" class="nav__brand" aria-label="Amarah — Home">
+      <span class="nav__logo nav__logo--light">
+        <img class="nav__logo-mark" src="../assets/images/logo/mark_white.png" alt="" aria-hidden="true">
+        <img class="nav__logo-wordmark" src="../assets/images/logo/wordmark_white.png" alt="Amarah">
+      </span>
+      <span class="nav__logo nav__logo--dark">
+        <img class="nav__logo-mark" src="../assets/images/logo/mark.png" alt="" aria-hidden="true">
+        <img class="nav__logo-wordmark" src="../assets/images/logo/wordmark.png" alt="Amarah">
+      </span>
+    </a>
+    <nav class="nav__links" aria-label="Primary navigation">
+      <a href="../about.html">About</a>
+      <a href="../projects/" aria-current="page">Projects</a>
+      <a href="../gallery.html">Gallery</a>
+      <a href="../leadership.html">Leadership</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+    <a href="../contact.html" class="btn btn--ghost nav__cta">
+      <span>Register Interest</span>
+      <svg><use href="#i-arrow"/></svg>
+    </a>
+    <button class="nav__burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__mobile" aria-hidden="true">
+      <a href="../about.html">About</a>
+      <a href="../projects/">Projects</a>
+      <a href="../gallery.html">Gallery</a>
+      <a href="../leadership.html">Leadership</a>
+      <a href="../contact.html">Register Interest</a>
+    </div>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <span class="page-hero__eyebrow">03 — Selected Projects</span>
+    <h1 class="page-hero__title">A portfolio of<br/>residences.</h1>
+    <p class="page-hero__sub">Five developments across the UAE. Each built to a standard we would apply to our own home.</p>
+  </div>
+</section>
+
+<!-- Projects Grid -->
+<section class="projects-list">
+  <div class="container">
+    <div class="projects-list__filters" role="group" aria-label="Filter projects">
+      <button class="projects-list__filter-btn is-active" data-filter="all">All Projects</button>
+      <button class="projects-list__filter-btn" data-filter="villa">Villas</button>
+      <button class="projects-list__filter-btn" data-filter="apartment">Apartments</button>
+      <button class="projects-list__filter-btn" data-filter="selling">Now Selling</button>
+      <button class="projects-list__filter-btn" data-filter="launching">Launching Soon</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <a href="maison-liwa.html" class="project-thumb" data-type="villa" data-status="selling">
+        <div class="project-thumb__media">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+               alt="Maison Liwa — private villas at Al Barari, Dubai" loading="lazy" />
+          <div class="project-thumb__status">Now Selling</div>
+        </div>
+        <div class="project-thumb__body">
+          <p class="project-thumb__location">Dubai · Al Barari</p>
+          <h2 class="project-thumb__name">Maison Liwa</h2>
+          <p class="project-thumb__type">Private villas · 5–7 bedrooms · 6,400–11,200 sqft</p>
+          <p class="project-thumb__from">From AED 18.5M</p>
+          <span class="project-thumb__link">View project <svg width="12" height="12"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+
+      <a href="serai-tower.html" class="project-thumb" data-type="apartment" data-status="launching">
+        <div class="project-thumb__media">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+               alt="Serai Tower — sky apartments in Business Bay, Dubai" loading="lazy" />
+          <div class="project-thumb__status">Launching Q3</div>
+        </div>
+        <div class="project-thumb__body">
+          <p class="project-thumb__location">Dubai · Business Bay</p>
+          <h2 class="project-thumb__name">Serai Tower</h2>
+          <p class="project-thumb__type">Sky apartments · 1–4 bedrooms + Penthouses · 1,200–4,800 sqft</p>
+          <p class="project-thumb__from">From AED 4.2M</p>
+          <span class="project-thumb__link">View project <svg width="12" height="12"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+
+      <a href="dar-amarah.html" class="project-thumb" data-type="villa" data-status="selling">
+        <div class="project-thumb__media">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80"
+               alt="Dar Amarah — beachfront estates on Saadiyat Island, Abu Dhabi" loading="lazy" />
+          <div class="project-thumb__status">Phase II Released</div>
+        </div>
+        <div class="project-thumb__body">
+          <p class="project-thumb__location">Abu Dhabi · Saadiyat Island</p>
+          <h2 class="project-thumb__name">Dar Amarah</h2>
+          <p class="project-thumb__type">Beachfront estates · 6–8 bedrooms · 8,100–14,500 sqft</p>
+          <p class="project-thumb__from">From AED 28M</p>
+          <span class="project-thumb__link">View project <svg width="12" height="12"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+
+      <a href="noor-courtyards.html" class="project-thumb" data-type="villa" data-status="selling">
+        <div class="project-thumb__media">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+               alt="Noor Courtyards — courtyard townhouses in MBR City, Dubai" loading="lazy" />
+          <div class="project-thumb__status">Now Selling</div>
+        </div>
+        <div class="project-thumb__body">
+          <p class="project-thumb__location">Dubai · MBR City</p>
+          <h2 class="project-thumb__name">Noor Courtyards</h2>
+          <p class="project-thumb__type">Courtyard townhouses · 4–5 bedrooms · 4,800–7,200 sqft</p>
+          <p class="project-thumb__from">From AED 9.8M</p>
+          <span class="project-thumb__link">View project <svg width="12" height="12"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+
+      <a href="rayan-estates.html" class="project-thumb" data-type="villa" data-status="launching">
+        <div class="project-thumb__media">
+          <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80"
+               alt="Rayan Estates — island villas on Al Marjan, Ras Al Khaimah" loading="lazy" />
+          <div class="project-thumb__status coming-soon">Priority Register</div>
+        </div>
+        <div class="project-thumb__body">
+          <p class="project-thumb__location">Ras Al Khaimah · Al Marjan Island</p>
+          <h2 class="project-thumb__name">Rayan Estates</h2>
+          <p class="project-thumb__type">Island villas · 7–9 bedrooms · 9,600–16,000 sqft</p>
+          <p class="project-thumb__from">From AED 32M</p>
+          <span class="project-thumb__link">Priority register <svg width="12" height="12"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Metrics band -->
+<section style="background:var(--amr-midnight-tide);padding:80px 0;color:var(--amr-chalk-dust);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;">
+      <div style="padding:40px 36px;border-right:1px solid rgba(235,232,223,.1);">
+        <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.5;margin-bottom:12px;">Total portfolio</div>
+        <div style="font-family:var(--font-display);font-size:clamp(2.4rem,4vw,3.6rem);font-weight:300;color:var(--amr-ivory-husk);font-feature-settings:'ss01'">AED 1.2B+</div>
+      </div>
+      <div style="padding:40px 36px;border-right:1px solid rgba(235,232,223,.1);">
+        <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.5;margin-bottom:12px;">Residences available</div>
+        <div style="font-family:var(--font-display);font-size:clamp(2.4rem,4vw,3.6rem);font-weight:300;font-feature-settings:'ss01'">254</div>
+      </div>
+      <div style="padding:40px 36px;border-right:1px solid rgba(235,232,223,.1);">
+        <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.5;margin-bottom:12px;">Earliest handover</div>
+        <div style="font-family:var(--font-display);font-size:clamp(2.4rem,4vw,3.6rem);font-weight:300;font-feature-settings:'ss01'">Q3 2026</div>
+      </div>
+      <div style="padding:40px 36px;">
+        <div style="font-family:var(--font-sans);font-size:10px;letter-spacing:.12em;text-transform:uppercase;opacity:.5;margin-bottom:12px;">Historic capital growth</div>
+        <div style="font-family:var(--font-display);font-size:clamp(2.4rem,4vw,3.6rem);font-weight:300;color:var(--amr-ivory-husk);font-feature-settings:'ss01'">+38%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="project-cta-band">
+  <div class="container">
+    <h2>Every residence is<br/>available by introduction.</h2>
+    <p>We do not advertise broadly. If you are reading this, you have already found the right door.</p>
+    <a href="../contact.html" class="btn btn--primary">
+      <span>Register Interest</span>
+      <svg><use href="#i-arrow"/></svg>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid footer__grid--multi">
+      <div class="footer__brand-col">
+        <div class="footer__brand">
+          <a href="../index.html" aria-label="Amarah — Home">
+            <span class="footer__logo-lockup">
+              <img class="footer__logo-mark" src="../assets/images/logo/mark_white.png" alt="" aria-hidden="true">
+              <img class="footer__logo-wordmark" src="../assets/images/logo/wordmark_white.png" alt="Amarah">
+            </span>
+          </a>
+        </div>
+        <p class="footer__tag">A Serene Lifestyle.</p>
+        <p class="footer__addr">Boulevard Plaza Tower 1<br>Downtown Dubai, UAE</p>
+      </div>
+      <div class="footer__links-col">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="maison-liwa.html">Maison Liwa</a></li>
+          <li><a href="serai-tower.html">Serai Tower</a></li>
+          <li><a href="dar-amarah.html">Dar Amarah</a></li>
+          <li><a href="noor-courtyards.html">Noor Courtyards</a></li>
+          <li><a href="rayan-estates.html">Rayan Estates</a></li>
+        </ul>
+      </div>
+      <div class="footer__links-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../gallery.html">Gallery</a></li>
+          <li><a href="../leadership.html">Leadership</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__links-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">RERA</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>© <span data-year></span> Amarah Developments LLC. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  // Projects filter
+  const filterBtns = document.querySelectorAll('.projects-list__filter-btn');
+  const thumbs = document.querySelectorAll('.project-thumb');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      const f = btn.dataset.filter;
+      thumbs.forEach(t => {
+        if (f === 'all') { t.style.display = ''; return; }
+        const match = t.dataset.type === f || t.dataset.status === f;
+        t.style.display = match ? '' : 'none';
+      });
+    });
+  });
+  // Read URL params on load
+  const params = new URLSearchParams(window.location.search);
+  if (params.has('type') || params.has('project')) {
+    const activeBtn = document.querySelector('[data-filter="all"]');
+    if (activeBtn) activeBtn.classList.remove('is-active');
+  }
+</script>
+</body>
+</html>

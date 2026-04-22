@@ -223,58 +223,20 @@
     if (e.key === 'Escape') closeAllFilters();
   });
 
-  // Search button — scroll to contact / filter results
+  // Search button — navigate to projects page with query params
   const filterSearchBtn = document.querySelector('.filter-search-btn');
   if (filterSearchBtn) {
     filterSearchBtn.addEventListener('click', () => {
       closeAllFilters();
-      // Collect current filter values
-      const selections = {};
+      const params = new URLSearchParams();
       filterItems.forEach(item => {
         const key = item.dataset.filter;
         const selected = item.querySelector('.filter-dropdown li.is-selected');
-        selections[key] = selected ? selected.dataset.value : '';
+        const val = selected ? selected.dataset.value : '';
+        if (val) params.set(key, val);
       });
-
-      // Update the contact form's project select to match chosen project
-      const projectSelect = document.getElementById('project');
-      if (projectSelect && selections.project) {
-        const projectMap = {
-          'maison-liwa':    'Maison Liwa',
-          'serai-tower':    'Serai Tower',
-          'dar-amarah':     'Dar Amarah',
-          'noor-courtyards':'Noor Courtyards',
-          'rayan-estates':  'Rayan Estates',
-        };
-        const projectName = projectMap[selections.project];
-        if (projectName) {
-          [...projectSelect.options].forEach(opt => {
-            opt.selected = opt.text === projectName;
-          });
-        }
-      }
-
-      // Update budget select
-      const budgetSelect = document.getElementById('budget');
-      if (budgetSelect && selections.budget) {
-        const budgetMap = {
-          'under-5m': 'Under AED 5M',
-          '5-10m':    'AED 5M – 10M',
-          '10-25m':   'AED 10M – 25M',
-          '25-50m':   'AED 25M – 50M',
-          '50m':      'AED 50M+',
-          'discuss':  'Prefer to discuss',
-        };
-        const budgetName = budgetMap[selections.budget];
-        if (budgetName) {
-          [...budgetSelect.options].forEach(opt => {
-            opt.selected = opt.text === budgetName;
-          });
-        }
-      }
-
-      // Scroll to contact section
-      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+      const qs = params.toString();
+      window.location.href = 'projects/' + (qs ? '?' + qs : '');
     });
   }
 
