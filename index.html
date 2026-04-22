@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#ebe8df" />
+<title>Amarah — A Serene Lifestyle | Dubai, UAE</title>
+<meta name="description" content="Amarah is a UAE-based luxury real-estate developer. Architecturally disciplined, materially uncompromising, quietly luxurious residences in Dubai and Abu Dhabi." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="assets/images/logo/mark.png">
+<link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="square" d="M4 12h15M13 6l6 6-6 6"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- Navigation -->
+<header class="nav" id="nav">
+  <div class="container">
+    <a href="#home" class="nav__brand" aria-label="Amarah — Home">
+      <img class="nav__logo nav__logo--light" src="assets/images/logo/logo-dark-bg.png" alt="Amarah" height="32" />
+      <img class="nav__logo nav__logo--dark"  src="assets/images/logo/logo-light-bg.png" alt="Amarah" height="32" />
+    </a>
+    <nav class="nav__links" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn--ghost nav__cta">
+      <span>Register Interest</span>
+      <svg><use href="#i-arrow"/></svg>
+    </a>
+    <button class="nav__burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__mobile" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#projects">Projects</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#press">Press</a>
+      <a href="#contact">Register Interest</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================================================================
+     HERO
+================================================================ -->
+<section class="hero" id="home">
+  <div class="hero__media">
+    <img src="assets/images/exterior/hero-01.jpg" alt="Amarah residence exterior — understated luxury architecture" />
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <div class="hero__eyebrow">Established developer. Select residences.</div>
+      <h1 class="hero__title">
+        <span class="hero__word" style="--i:0">A</span>
+        <span class="hero__word" style="--i:1">Serene</span><br/>
+        <span class="hero__word" style="--i:2">Lifestyle.</span>
+      </h1>
+      <p class="hero__sub">
+        Amarah builds homes that feel like sanctuaries — architecturally disciplined,
+        materially uncompromising, quietly luxurious.
+      </p>
+      <div class="hero__ctas">
+        <a href="#contact" class="btn btn--primary">
+          <span>Register Interest</span>
+          <svg><use href="#i-arrow"/></svg>
+        </a>
+        <a href="#projects" class="btn btn--ghost">
+          <span>View Projects</span>
+          <svg><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </div>
+
+  <!-- ── Property search filter bar ── -->
+  <div class="filter-outer" role="search" aria-label="Property search filters">
+    <div class="filter-bar">
+
+      <!-- Property Type -->
+      <div class="filter-item" data-filter="type">
+        <button class="filter-btn" aria-expanded="false" aria-haspopup="listbox" type="button">
+          <span class="filter-btn-text">
+            <span class="filter-label">Property Type</span>
+            <span class="filter-value">All Types</span>
+          </span>
+          <svg class="filter-chevron" viewBox="0 0 12 7" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M1 1l5 5 5-5"/>
+          </svg>
+        </button>
+        <ul class="filter-dropdown" role="listbox" aria-label="Property types">
+          <li role="option" data-value="">All Types</li>
+          <li role="option" data-value="villa">Villa</li>
+          <li role="option" data-value="apartment">Apartment</li>
+          <li role="option" data-value="penthouse">Penthouse</li>
+          <li role="option" data-value="townhouse">Townhouse</li>
+          <li role="option" data-value="island-villa">Island Villa</li>
+        </ul>
+      </div>
+
+      <div class="filter-sep" aria-hidden="true"></div>
+
+      <!-- Bedrooms -->
+      <div class="filter-item" data-filter="bedrooms">
+        <button class="filter-btn" aria-expanded="false" aria-haspopup="listbox" type="button">
+          <span class="filter-btn-text">
+            <span class="filter-label">Bedrooms</span>
+            <span class="filter-value">Any</span>
+          </span>
+          <svg class="filter-chevron" viewBox="0 0 12 7" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M1 1l5 5 5-5"/>
+          </svg>
+        </button>
+        <ul class="filter-dropdown" role="listbox" aria-label="Number of bedrooms">
+          <li role="option" data-value="">Any</li>
+          <li role="option" data-value="1">1 Bedroom</li>
+          <li role="option" data-value="2">2 Bedrooms</li>
+          <li role="option" data-value="3">3 Bedrooms</li>
+          <li role="option" data-value="4">4 Bedrooms</li>
+          <li role="option" data-value="5">5+ Bedrooms</li>
+        </ul>
+      </div>
+
+      <div class="filter-sep" aria-hidden="true"></div>
+
+      <!-- Price Range -->
+      <div class="filter-item" data-filter="budget">
+        <button class="filter-btn" aria-expanded="false" aria-haspopup="listbox" type="button">
+          <span class="filter-btn-text">
+            <span class="filter-label">Price Range</span>
+            <span class="filter-value">Any Budget</span>
+          </span>
+          <svg class="filter-chevron" viewBox="0 0 12 7" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M1 1l5 5 5-5"/>
+          </svg>
+        </button>
+        <ul class="filter-dropdown" role="listbox" aria-label="Price range">
+          <li role="option" data-value="">Any Budget</li>
+          <li role="option" data-value="under-5m">Under AED 5M</li>
+          <li role="option" data-value="5-10m">AED 5M – 10M</li>
+          <li role="option" data-value="10-25m">AED 10M – 25M</li>
+          <li role="option" data-value="25-50m">AED 25M – 50M</li>
+          <li role="option" data-value="50m">AED 50M+</li>
+          <li role="option" data-value="discuss">Prefer to discuss</li>
+        </ul>
+      </div>
+
+      <div class="filter-sep" aria-hidden="true"></div>
+
+      <!-- Community / Project -->
+      <div class="filter-item" data-filter="project">
+        <button class="filter-btn" aria-expanded="false" aria-haspopup="listbox" type="button">
+          <span class="filter-btn-text">
+            <span class="filter-label">Community</span>
+            <span class="filter-value">All Projects</span>
+          </span>
+          <svg class="filter-chevron" viewBox="0 0 12 7" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M1 1l5 5 5-5"/>
+          </svg>
+        </button>
+        <ul class="filter-dropdown" role="listbox" aria-label="Community or project">
+          <li role="option" data-value="">All Projects</li>
+          <li role="option" data-value="maison-liwa">Maison Liwa</li>
+          <li role="option" data-value="serai-tower">Serai Tower</li>
+          <li role="option" data-value="dar-amarah">Dar Amarah</li>
+          <li role="option" data-value="noor-courtyards">Noor Courtyards</li>
+          <li role="option" data-value="rayan-estates">Rayan Estates</li>
+        </ul>
+      </div>
+
+      <!-- Search CTA -->
+      <button class="filter-search-btn" type="button" aria-label="Search properties">
+        <span>Search Properties</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="square" aria-hidden="true">
+          <path d="M4 12h15M13 6l6 6-6 6"/>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<!-- Marquee / brand statement -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>
+      Quiet Luxury <span class="marquee__dot"></span>
+      Considered Materiality <span class="marquee__dot"></span>
+      Disciplined Geometry <span class="marquee__dot"></span>
+      Lived Calm <span class="marquee__dot"></span>
+      Lasting Value <span class="marquee__dot"></span>
+    </span>
+    <span aria-hidden="true">
+      Quiet Luxury <span class="marquee__dot"></span>
+      Considered Materiality <span class="marquee__dot"></span>
+      Disciplined Geometry <span class="marquee__dot"></span>
+      Lived Calm <span class="marquee__dot"></span>
+      Lasting Value <span class="marquee__dot"></span>
+    </span>
+  </div>
+</section>
+
+<!-- ================================================================
+     §01 — ABOUT
+================================================================ -->
+<section class="about section-pad" id="about">
+  <div class="container">
+    <span class="section-label" data-reveal>01 — About</span>
+    <div class="about__grid">
+      <div class="about__text" data-reveal data-delay="1">
+        <h2>We do not construct buildings.<br/>We compose living environments.</h2>
+        <p>
+          At Amarah, a home is more than a place to live. It is a space that reflects
+          care, craftsmanship, and a deeper sense of belonging. Our design philosophy
+          is guided by the principle of quiet luxury — elegance expressed through
+          thoughtful design, exceptional quality, and timeless materials rather than excess.
+        </p>
+        <p>
+          We do not simply construct buildings. We create environments where comfort,
+          serenity, and understated sophistication come together effortlessly.
+        </p>
+      </div>
+      <div class="about__stats-grid" data-reveal data-delay="2" aria-label="Key figures">
+        <div class="about__stat">
+          <strong>12<sup>+</sup></strong>
+          <span>Years in development</span>
+        </div>
+        <div class="about__stat">
+          <strong>480</strong>
+          <span>Residences delivered</span>
+        </div>
+        <div class="about__stat">
+          <strong>98%</strong>
+          <span>Owner satisfaction</span>
+        </div>
+        <div class="about__stat">
+          <strong>7</strong>
+          <span>Active projects</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     §02 — PHILOSOPHY
+================================================================ -->
+<section class="philosophy section-pad" id="philosophy">
+  <div class="container">
+    <span class="section-label" data-reveal>02 — Philosophy</span>
+    <h2 class="philosophy__title" data-reveal data-delay="1">
+      Quiet luxury,<br/>made architectural.
+    </h2>
+    <div class="philosophy__pillars">
+      <div class="philosophy__pillar" data-reveal>
+        <div class="philosophy__numeral">I</div>
+        <h3 class="philosophy__pillar-title">Considered Materiality</h3>
+        <p class="philosophy__pillar-body">
+          Natural stone, honed travertine, smoked oak, brushed bronze. Every surface
+          selected for how it ages, not just how it looks on day one.
+        </p>
+      </div>
+      <div class="philosophy__pillar" data-reveal data-delay="1">
+        <div class="philosophy__numeral">II</div>
+        <h3 class="philosophy__pillar-title">Disciplined Geometry</h3>
+        <p class="philosophy__pillar-body">
+          Plans resolved on a precise grid. Volumes proportioned to the body. Light
+          treated as a primary material, not an afterthought.
+        </p>
+      </div>
+      <div class="philosophy__pillar" data-reveal data-delay="2">
+        <div class="philosophy__numeral">III</div>
+        <h3 class="philosophy__pillar-title">Lived Calm</h3>
+        <p class="philosophy__pillar-body">
+          Acoustically quieted interiors, generous thresholds, air that moves correctly.
+          Spaces engineered for the nervous system as much as the eye.
+        </p>
+      </div>
+      <div class="philosophy__pillar" data-reveal data-delay="3">
+        <div class="philosophy__numeral">IV</div>
+        <h3 class="philosophy__pillar-title">Lasting Value</h3>
+        <p class="philosophy__pillar-body">
+          Built to stand beautifully over decades. We select trusted global partners
+          and commission details twice before they meet a resident.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     §03 — PROJECTS  (horizontal scroll on desktop)
+================================================================ -->
+<section class="projects-scroll-section" id="projects">
+  <div class="projects-scroll-sticky">
+    <div class="container projects-scroll-header">
+      <span class="section-label">03 — Selected Projects</span>
+      <h2 class="projects-scroll-title">A portfolio of residences.</h2>
+    </div>
+    <div class="projects-rail">
+
+        <!-- 01 Maison Liwa -->
+        <article class="project-card">
+          <div class="project-card__media">
+            <!-- TODO: replace with final render -->
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+                 alt="Maison Liwa — private villas at Al Barari, Dubai" loading="lazy" />
+            <div class="project-card__status">Now Selling</div>
+          </div>
+          <p class="project-card__index">01 — Dubai · Al Barari</p>
+          <h3 class="project-card__name">Maison Liwa</h3>
+          <p class="project-card__location">Private villas · 6,400–11,200 sqft</p>
+          <div class="project-card__meta">
+            <span>24 residences</span>
+            <span>Private villas</span>
+          </div>
+          <a href="#contact" class="project-card__link">
+            View project <svg width="12" height="12"><use href="#i-arrow"/></svg>
+          </a>
+        </article>
+
+        <!-- 02 Serai Tower -->
+        <article class="project-card">
+          <div class="project-card__media">
+            <!-- TODO: replace with final render -->
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+                 alt="Serai Tower — sky apartments in Business Bay, Dubai" loading="lazy" />
+            <div class="project-card__status">Launching Q3</div>
+          </div>
+          <p class="project-card__index">02 — Dubai · Business Bay</p>
+          <h3 class="project-card__name">Serai Tower</h3>
+          <p class="project-card__location">Sky apartments · 1,200–4,800 sqft</p>
+          <div class="project-card__meta">
+            <span>112 residences</span>
+            <span>Sky apartments</span>
+          </div>
+          <a href="#contact" class="project-card__link">
+            View project <svg width="12" height="12"><use href="#i-arrow"/></svg>
+          </a>
+        </article>
+
+        <!-- 03 Dar Amarah -->
+        <article class="project-card">
+          <div class="project-card__media">
+            <!-- TODO: replace with final render -->
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80"
+                 alt="Dar Amarah — beachfront estates on Saadiyat Island, Abu Dhabi" loading="lazy" />
+            <div class="project-card__status">Phase II Released</div>
+          </div>
+          <p class="project-card__index">03 — Abu Dhabi · Saadiyat</p>
+          <h3 class="project-card__name">Dar Amarah</h3>
+          <p class="project-card__location">Beachfront estates · 8,100–14,500 sqft</p>
+          <div class="project-card__meta">
+            <span>38 residences</span>
+            <span>Beachfront estates</span>
+          </div>
+          <a href="#contact" class="project-card__link">
+            View project <svg width="12" height="12"><use href="#i-arrow"/></svg>
+          </a>
+        </article>
+
+        <!-- 04 Noor Courtyards -->
+        <article class="project-card">
+          <div class="project-card__media">
+            <!-- TODO: replace with final render -->
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+                 alt="Noor Courtyards — courtyard townhouses in MBR City, Dubai" loading="lazy" />
+            <div class="project-card__status">Now Selling</div>
+          </div>
+          <p class="project-card__index">04 — Dubai · MBR City</p>
+          <h3 class="project-card__name">Noor Courtyards</h3>
+          <p class="project-card__location">Courtyard townhouses · 4,800–7,200 sqft</p>
+          <div class="project-card__meta">
+            <span>62 residences</span>
+            <span>Townhouses</span>
+          </div>
+          <a href="#contact" class="project-card__link">
+            View project <svg width="12" height="12"><use href="#i-arrow"/></svg>
+          </a>
+        </article>
+
+        <!-- 05 Rayan Estates -->
+        <article class="project-card">
+          <div class="project-card__media">
+            <!-- TODO: replace with final render -->
+            <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80"
+                 alt="Rayan Estates — island villas on Al Marjan, Ras Al Khaimah" loading="lazy" />
+            <div class="project-card__status coming-soon">Coming Soon</div>
+          </div>
+          <p class="project-card__index">05 — Ras Al Khaimah · Al Marjan</p>
+          <h3 class="project-card__name">Rayan Estates</h3>
+          <p class="project-card__location">Island villas · 9,600–16,000 sqft</p>
+          <div class="project-card__meta">
+            <span>18 residences</span>
+            <span>Island villas</span>
+          </div>
+          <a href="#contact" class="project-card__link">
+            View project <svg width="12" height="12"><use href="#i-arrow"/></svg>
+          </a>
+        </article>
+
+    </div><!-- /projects-rail -->
+  </div><!-- /projects-scroll-sticky -->
+</section>
+
+<!-- ================================================================
+     §04 — AMENITIES
+================================================================ -->
+<section class="amenities section-pad" id="amenities">
+  <div class="container">
+    <span class="section-label" data-reveal>04 — Amenities</span>
+    <div class="amenities__grid">
+      <div class="amenities__intro" data-reveal data-delay="1">
+        <h2>The residence extends<br/>beyond the threshold.</h2>
+        <p>
+          Every Amarah development is designed as a complete ecosystem. Services,
+          spaces, and rituals that most developers treat as features, we treat as
+          standards.
+        </p>
+      </div>
+      <ul class="amenities__list" data-reveal data-delay="2" aria-label="Amenity list">
+        <li>Residents-only wellness floor with thermal suite</li>
+        <li>25m ozonated lap pool, separate family pool</li>
+        <li>Concierge and white-glove valet, 24/7</li>
+        <li>Private dining room with guest chef programme</li>
+        <li>Treatment rooms and meditation pavilion</li>
+        <li>Curated library and co-working lounges</li>
+        <li>Children's garden and supervised play atelier</li>
+        <li>Electric fleet, charging and service bays</li>
+        <li>Prayer rooms with acoustic separation</li>
+        <li>Landscaped promenades by award-winning studios</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     §05 — GALLERY
+================================================================ -->
+<section class="gallery section-pad" id="gallery">
+  <div class="container">
+    <span class="section-label" data-reveal>05 — Gallery</span>
+    <h2 class="gallery__title" data-reveal data-delay="1">Moments from our residences.</h2>
+  </div>
+  <div class="gallery__grid">
+    <a href="assets/images/interior/kitchen.png" class="gallery__item gallery__item--large" data-reveal>
+      <img src="assets/images/interior/kitchen.png" alt="Kitchen with natural stone island" loading="lazy" />
+      <span class="gallery__caption">The Kitchen</span>
+    </a>
+    <a href="assets/images/exterior/ext-04.jpg" class="gallery__item gallery__item--tall" data-reveal data-delay="1">
+      <img src="assets/images/exterior/ext-04.jpg" alt="Exterior courtyard at dusk" loading="lazy" />
+      <span class="gallery__caption">The Arrival</span>
+    </a>
+    <a href="assets/images/interior/foyer.png" class="gallery__item gallery__item--sq" data-reveal>
+      <img src="assets/images/interior/foyer.png" alt="Entry foyer with considered materiality" loading="lazy" />
+      <span class="gallery__caption">The Foyer</span>
+    </a>
+    <a href="assets/images/clubhouse/club-02.jpg" class="gallery__item gallery__item--wide" data-reveal data-delay="1">
+      <img src="assets/images/clubhouse/club-02.jpg" alt="Residents lounge in the clubhouse" loading="lazy" />
+      <span class="gallery__caption">The Lounge</span>
+    </a>
+    <a href="assets/images/exterior/ext-05.jpg" class="gallery__item gallery__item--tall" data-reveal>
+      <img src="assets/images/exterior/ext-05.jpg" alt="Architectural facade detail" loading="lazy" />
+      <span class="gallery__caption">The Facade</span>
+    </a>
+    <a href="assets/images/interior/int-05.jpg" class="gallery__item gallery__item--large" data-reveal data-delay="1">
+      <img src="assets/images/interior/int-05.jpg" alt="Living space with soft natural light" loading="lazy" />
+      <span class="gallery__caption">The Living Room</span>
+    </a>
+    <a href="assets/images/penthouse/pent-01.jpg" class="gallery__item gallery__item--sq" data-reveal>
+      <img src="assets/images/penthouse/pent-01.jpg" alt="Penthouse interior detail" loading="lazy" />
+      <span class="gallery__caption">The Penthouse</span>
+    </a>
+    <a href="assets/images/clubhouse/club-ext.jpg" class="gallery__item gallery__item--wide" data-reveal data-delay="1">
+      <img src="assets/images/clubhouse/club-ext.jpg" alt="Clubhouse exterior and gardens" loading="lazy" />
+      <span class="gallery__caption">The Clubhouse</span>
+    </a>
+  </div>
+</section>
+
+<!-- ================================================================
+     §06 — LEADERSHIP
+================================================================ -->
+<section class="leadership section-pad" id="leadership">
+  <div class="container">
+    <span class="section-label" data-reveal>06 — Leadership</span>
+    <h2 class="leadership__title" data-reveal data-delay="1">The people behind the practice.</h2>
+    <div class="leadership__grid">
+
+      <article class="leadership-card" data-reveal>
+        <div class="leadership-card__portrait">
+          <!-- TODO: replace with professional headshot -->
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=480&h=600&fit=crop&crop=face"
+               alt="Omar Al Habtoor — Founder and Chairman of Amarah" loading="lazy" />
+        </div>
+        <h3 class="leadership-card__name">Omar Al Habtoor</h3>
+        <p class="leadership-card__role">Founder &amp; Chairman</p>
+        <p class="leadership-card__bio">
+          Two decades leading premium developments across the GCC. Sets Amarah's
+          long-range vision and capital discipline.
+        </p>
+      </article>
+
+      <article class="leadership-card" data-reveal data-delay="1">
+        <div class="leadership-card__portrait">
+          <!-- TODO: replace with professional headshot -->
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=480&h=600&fit=crop&crop=face"
+               alt="Layla Mansoori — Chief Design Officer of Amarah" loading="lazy" />
+        </div>
+        <h3 class="leadership-card__name">Layla Mansoori</h3>
+        <p class="leadership-card__role">Chief Design Officer</p>
+        <p class="leadership-card__bio">
+          AA Dipl. Former senior associate at David Chipperfield Architects. Leads
+          all product and spatial direction — every plan passes through her studio.
+        </p>
+      </article>
+
+      <article class="leadership-card" data-reveal data-delay="2">
+        <div class="leadership-card__portrait">
+          <!-- TODO: replace with professional headshot -->
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=480&h=600&fit=crop&crop=face"
+               alt="Hassan Reza — Chief Executive Officer of Amarah" loading="lazy" />
+        </div>
+        <h3 class="leadership-card__name">Hassan Reza</h3>
+        <p class="leadership-card__role">Chief Executive Officer</p>
+        <p class="leadership-card__bio">
+          Fifteen years in real estate capital markets. Oversees delivery, sales,
+          and the partnerships that bring each project to completion on schedule.
+        </p>
+      </article>
+
+      <article class="leadership-card" data-reveal data-delay="3">
+        <div class="leadership-card__portrait">
+          <!-- TODO: replace with professional headshot -->
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=480&h=600&fit=crop&crop=face"
+               alt="Sara Bin Nasser — Head of Client Experience at Amarah" loading="lazy" />
+        </div>
+        <h3 class="leadership-card__name">Sara Bin Nasser</h3>
+        <p class="leadership-card__role">Head of Client Experience</p>
+        <p class="leadership-card__bio">
+          Built Amarah's concierge, onboarding, and residency programme. Previously
+          Aman Hotels, Abu Dhabi. The reason owners stay, and refer.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     §07 — PRESS
+================================================================ -->
+<section class="press section-pad" id="press">
+  <div class="container">
+    <span class="section-label" data-reveal>07 — In the Press</span>
+    <h2 class="press__heading" data-reveal data-delay="1">Selected coverage.</h2>
+  </div>
+  <div class="press__grid">
+
+    <blockquote class="press__quote" data-reveal>
+      <p class="press__text">
+        "Amarah is writing a quieter grammar of Gulf luxury — one closer
+        to Kyoto than to Monte Carlo."
+      </p>
+      <footer class="press__source">
+        Wallpaper* <span class="press__year">— 2025</span>
+      </footer>
+    </blockquote>
+
+    <blockquote class="press__quote" data-reveal data-delay="1">
+      <p class="press__text">
+        "The most disciplined new developer to emerge from the UAE this decade."
+      </p>
+      <footer class="press__source">
+        Architectural Digest Middle East <span class="press__year">— 2025</span>
+      </footer>
+    </blockquote>
+
+    <blockquote class="press__quote" data-reveal data-delay="2">
+      <p class="press__text">
+        "A rare example of restraint in a market built on spectacle."
+      </p>
+      <footer class="press__source">
+        Monocle <span class="press__year">— 2025</span>
+      </footer>
+    </blockquote>
+
+    <blockquote class="press__quote" data-reveal data-delay="3">
+      <p class="press__text">
+        "Every detail is quietly, almost stubbornly, correct."
+      </p>
+      <footer class="press__source">
+        Dezeen <span class="press__year">— 2024</span>
+      </footer>
+    </blockquote>
+
+  </div>
+</section>
+
+<!-- ================================================================
+     §08 — CONTACT / REGISTER INTEREST
+================================================================ -->
+<section class="contact section-pad" id="contact">
+  <div class="container">
+    <div class="contact__grid">
+
+      <div class="contact__info">
+        <span class="section-label" data-reveal>08 — Register Interest</span>
+        <h2 data-reveal data-delay="1">Begin the<br/><em>conversation.</em></h2>
+        <p class="lead" data-reveal data-delay="2">
+          Share a few details and a member of our residency team will be in
+          touch within one business day. All enquiries are treated with discretion.
+        </p>
+        <div class="contact__meta" data-reveal data-delay="3">
+          <div class="contact__meta-item">
+            <span class="contact__meta-label">Office</span>
+            <span class="contact__meta-value">Boulevard Plaza Tower 1, Downtown Dubai, UAE</span>
+          </div>
+          <div class="contact__meta-item">
+            <span class="contact__meta-label">Direct</span>
+            <a href="tel:+97140000000" class="contact__meta-value">+971 4 000 0000</a>
+          </div>
+          <div class="contact__meta-item">
+            <span class="contact__meta-label">Email</span>
+            <a href="mailto:hello@amarah.ae" class="contact__meta-value">hello@amarah.ae</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__form-wrap" data-reveal data-delay="1">
+        <form class="contact__form" id="enquiry-form" novalidate>
+          <div class="field">
+            <label for="full_name">Full name</label>
+            <input type="text" id="full_name" name="full_name" autocomplete="name" required />
+          </div>
+          <div class="contact__form-row">
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone (with country code)</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="+971" />
+            </div>
+          </div>
+          <div class="contact__form-row">
+            <div class="field">
+              <label for="project">Project of interest</label>
+              <select id="project" name="project" required>
+                <option value="" disabled selected>Select a project</option>
+                <option>Any — open to guidance</option>
+                <option>Maison Liwa</option>
+                <option>Serai Tower</option>
+                <option>Dar Amarah</option>
+                <option>Noor Courtyards</option>
+                <option>Rayan Estates</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="budget">Indicative budget</label>
+              <select id="budget" name="budget" required>
+                <option value="" disabled selected>Select a range</option>
+                <option>Under AED 5M</option>
+                <option>AED 5M – 10M</option>
+                <option>AED 10M – 25M</option>
+                <option>AED 25M – 50M</option>
+                <option>AED 50M+</option>
+                <option>Prefer to discuss</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Tell us about your timing and requirements (optional)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <div class="contact__form-footer">
+            <p class="contact__privacy">
+              By submitting you agree to our privacy practices.
+              We do not share data with third parties.
+            </p>
+            <button type="submit" class="btn btn--primary contact__submit">
+              <span class="contact__submit-text">Submit enquiry</span>
+              <svg><use href="#i-arrow"/></svg>
+            </button>
+            <p class="contact__error" aria-live="polite" hidden>
+              Something went wrong. Please try again or email us directly.
+            </p>
+          </div>
+        </form>
+        <div class="contact__success" id="contact-success" hidden>
+          <div class="contact__success-inner">
+            <p class="contact__success-mark" aria-hidden="true">✓</p>
+            <h3>Thank you.</h3>
+            <p>We'll be in touch within one business day.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     FOOTER
+================================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand-col">
+        <div class="footer__brand">
+          <!-- logo-dark-bg = white/light logo, correct for dark footer -->
+          <img src="assets/images/logo/logo-dark-bg.png" alt="Amarah" height="28" />
+        </div>
+        <p class="footer__tag">A Serene Lifestyle.</p>
+        <p class="footer__addr">Boulevard Plaza Tower 1, Downtown Dubai, UAE</p>
+      </div>
+
+      <div class="footer__links-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">RERA</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__base">
+      <span>© <span data-year></span> Amarah Developments LLC. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================================================================
+     LIGHTBOX
+================================================================ -->
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" id="lightbox">
+  <div class="lightbox__backdrop"></div>
+  <button class="lightbox__prev" aria-label="Previous image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="square">
+      <path d="M4 12h15M13 6l6 6-6 6"/>
+    </svg>
+  </button>
+  <div class="lightbox__inner">
+    <button class="lightbox__close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <img class="lightbox__img" src="" alt="" />
+  </div>
+  <button class="lightbox__next" aria-label="Next image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="square">
+      <path d="M4 12h15M13 6l6 6-6 6"/>
+    </svg>
+  </button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
