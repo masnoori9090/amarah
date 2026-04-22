@@ -47,16 +47,22 @@
   color: inherit;
 }
 .nav__logo {
-  height: 32px;
-  width: auto;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-/* On hero (dark bg): show logo-dark-bg (white logo) */
+.nav__logo-mark {
+  height: 38px;
+  width: auto;
+}
+.nav__logo-wordmark {
+  height: 19px;
+  width: auto;
+}
 .nav__logo--dark  { display: none; }
-.nav__logo--light { display: block; }
-/* When scrolled to light nav bg: swap to logo-light-bg (dark logo) */
+.nav__logo--light { display: flex; }
 .nav.is-scrolled .nav__logo--light { display: none; }
-.nav.is-scrolled .nav__logo--dark  { display: block; }
+.nav.is-scrolled .nav__logo--dark  { display: flex; }
 .nav__links {
   display: flex;
   gap: 40px;

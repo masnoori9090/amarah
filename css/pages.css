@@ -1004,6 +1004,19 @@ a.contact__meta-value:hover { color: var(--color-accent-dk); }
   margin-bottom: 16px;
   opacity: 0.9;
 }
+.footer__logo-lockup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer__logo-mark {
+  height: 48px;
+  width: auto;
+}
+.footer__logo-wordmark {
+  height: 22px;
+  width: auto;
+}
 .footer__tag {
   font-family: var(--font-display);
   font-size: var(--fs-20);
